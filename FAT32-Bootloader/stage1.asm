@@ -144,7 +144,7 @@ protected_mode:
     call enter_protected_land
 
 enter_protected_land:
-    ;call LOAD_OFFSET
+    call LOAD_OFFSET
 
 
     cli
