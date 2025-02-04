@@ -32,14 +32,14 @@ print_register:
 ;-------------------------------------------------------------------------------
 ; Print String located at SI
 print_string:
-  pusha
-.loop:
-  lodsb
-  or al, al
-  jz .exit
-  mov ah, 0xE
-  int 10h
-  jmp .loop
-.exit:
-  popa
-  ret
+    pusha
+    .loop:
+        lodsb
+        or al, al
+        jz .exit
+        mov ah, 0xE
+        int 10h
+        jmp .loop
+    .exit:
+    popa
+ret
